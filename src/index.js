@@ -80,8 +80,7 @@ class EditorText extends React.Component{
         <p id="p2">Insira o seu texto no box abaixo e escolha o formato</p>
         <textarea onChange={this.pegarTexto} value={this.state.texto} 
         placeholder="Digite o seu texto aqui" id="textarea_inicial"></textarea>
-        <p>Quantidade de palavras: {this.wordCounter()}
-           | Letras: {this.letterCounter()}</p>
+        <p>Quantidade de letras: {this.letterCounter()}</p>
         <div id="botoes"> 
           <button type="button" onClick={this.converteMaiuscula}>Maiúsculo</button>
           <button type="button" onClick={this.converteMinuscula}>Minúsculo</button>
